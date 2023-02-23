@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xiao.eatontime.dao.CartDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.xiao.eatontime.entity.CartEntity" id="cartMap">
+        <result property="id" column="id"/>
+        <result property="dishName" column="dish_name"/>
+        <result property="pictureUrl" column="picture_url"/>
+        <result property="userId" column="user_id"/>
+        <result property="dishId" column="dish_id"/>
+        <result property="comboId" column="combo_id"/>
+        <result property="dishCount" column="dish_count"/>
+        <result property="price" column="price"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="delFlag" column="del_flag"/>
+    </resultMap>
+
+
+</mapper>
